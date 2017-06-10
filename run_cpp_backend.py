@@ -14,8 +14,9 @@ end_of_trace_error_msg = None
 
 DN = os.path.dirname(sys.argv[0])
 if not DN:
-    DN = '' # so that we always have an executable path like ./usercode.exe
-USER_PROGRAM = sys.argv[1] # string containing the program to be run
+    DN = '.' # so that we always have an executable path like ./usercode.exe
+f = open(sys.argv[1],'r') # string containing the program to be run
+USER_PROGRAM = f.read()
 LANG = sys.argv[2] # 'c' for C or 'cpp' for C++
 
 prettydump = False
@@ -35,8 +36,7 @@ else:
 
 F_PATH = os.path.join(DN, FN)
 VGTRACE_PATH = os.path.join(DN, 'usercode.vgtrace')
-OK='.'
-EXE_PATH = os.path.join(OK, 'usercode.exe')
+EXE_PATH = os.path.join(DN, 'usercode.exe')
 
 # get rid of stray files so that we don't accidentally use a stray one
 for f in (F_PATH, VGTRACE_PATH, EXE_PATH):
@@ -59,8 +59,7 @@ if gcc_retcode == 0:
     print >> sys.stderr, '==='
 
     # run it with Valgrind
-    VALGRIND_EXE = os.path.join(DN, 'valgrind')
-    #VALGRIND_EXE = os.path.join(DN, 'valgrind-3.11.0/inst/bin/valgrind')
+    VALGRIND_EXE = os.path.join(DN, 'valgrind-3.11.0/inst/bin/valgrind')
     # tricky! --source-filename takes a basename only, not a full pathname:
     valgrind_p = Popen(['stdbuf', '-o0', # VERY IMPORTANT to disable stdout buffering so that stdout is traced properly
                         VALGRIND_EXE,
