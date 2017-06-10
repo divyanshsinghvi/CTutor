@@ -1,6 +1,6 @@
-#include<stdio.h>
+#include<stdio.h> 
 int main()
 {
-int n = 40;
+int z=123;
 return 0;
 }
