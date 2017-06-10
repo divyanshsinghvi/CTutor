@@ -5,10 +5,10 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 3, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
-  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+{"func_name":"main", "line": 3, "SP": "0xFFEFFFD08",  "FP": "0x4004F0", "locals": {
+  "z": {"addr":"0xFFEFFFCFC", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
 },
-"ordered_varnames": ["n"]}]
+"ordered_varnames": ["z"]}]
 }
 === pg_trace_inst ===
 STDOUT: ""
@@ -17,11 +17,11 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 3, "SP": "0xFFEFFFD60",  "FP": "0x4004F0", "locals": {
-  "n": {"addr":"0xFFEFFFD54", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+{"func_name":"main", "line": 3, "SP": "0xFFEFFFD00",  "FP": "0x4004F0", "locals": {
+  "z": {"addr":"0xFFEFFFCF4", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
 },
-"ordered_varnames": ["n"]},
-{"func_name":"???", "line": -999, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
+"ordered_varnames": ["z"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFD08",  "FP": "0x4004F0", "locals": {
 },
 "ordered_varnames": []}]
 }
@@ -32,10 +32,10 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 4, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
-  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+{"func_name":"main", "line": 4, "SP": "0xFFEFFFD00",  "FP": "0xFFEFFFD00", "locals": {
+  "z": {"addr":"0xFFEFFFCFC", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
 },
-"ordered_varnames": ["n"]}]
+"ordered_varnames": ["z"]}]
 }
 === pg_trace_inst ===
 STDOUT: ""
@@ -44,10 +44,10 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 4, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
-  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+{"func_name":"main", "line": 4, "SP": "0xFFEFFFD00",  "FP": "0xFFEFFFD00", "locals": {
+  "z": {"addr":"0xFFEFFFCFC", "kind":"base", "type":"int", "size":4, "val":123}
 },
-"ordered_varnames": ["n"]}]
+"ordered_varnames": ["z"]}]
 }
 === pg_trace_inst ===
 STDOUT: ""
@@ -56,10 +56,10 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 6, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
-  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+{"func_name":"main", "line": 6, "SP": "0xFFEFFFD00",  "FP": "0xFFEFFFD00", "locals": {
+  "z": {"addr":"0xFFEFFFCFC", "kind":"base", "type":"int", "size":4, "val":123}
 },
-"ordered_varnames": ["n"]}]
+"ordered_varnames": ["z"]}]
 }
 === pg_trace_inst ===
 STDOUT: ""
@@ -68,8 +68,8 @@ STDOUT: ""
 "globals": {},
 "ordered_globals": [],
 "stack": [
-{"func_name":"main", "line": 6, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
-  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+{"func_name":"main", "line": 6, "SP": "0xFFEFFFD08",  "FP": "0x4004F0", "locals": {
+  "z": {"addr":"0xFFEFFFCFC", "kind":"base", "type":"int", "size":4, "val":123}
 },
-"ordered_varnames": ["n"]}]
+"ordered_varnames": ["z"]}]
 }
