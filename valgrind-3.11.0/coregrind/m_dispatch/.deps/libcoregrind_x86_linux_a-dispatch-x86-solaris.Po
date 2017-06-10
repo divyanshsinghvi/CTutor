@@ -1,0 +1,4 @@
+m_dispatch/libcoregrind_x86_linux_a-dispatch-x86-solaris.o: \
+ m_dispatch/dispatch-x86-solaris.S /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

@@ -1,0 +1,75 @@
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 3, "IP": "0x4004D6", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 3, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
+  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["n"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 3, "IP": "0x4004D7", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 3, "SP": "0xFFEFFFD60",  "FP": "0x4004F0", "locals": {
+  "n": {"addr":"0xFFEFFFD54", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["n"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
+},
+"ordered_varnames": []}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 4, "IP": "0x4004DA", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 4, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
+  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}
+},
+"ordered_varnames": ["n"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 5, "IP": "0x4004E1", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 4, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
+  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+},
+"ordered_varnames": ["n"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 6, "IP": "0x4004E6", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 6, "SP": "0xFFEFFFD60",  "FP": "0xFFEFFFD60", "locals": {
+  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+},
+"ordered_varnames": ["n"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 6, "IP": "0x4004E7", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 6, "SP": "0xFFEFFFD68",  "FP": "0x4004F0", "locals": {
+  "n": {"addr":"0xFFEFFFD5C", "kind":"base", "type":"int", "size":4, "val":40}
+},
+"ordered_varnames": ["n"]}]
+}

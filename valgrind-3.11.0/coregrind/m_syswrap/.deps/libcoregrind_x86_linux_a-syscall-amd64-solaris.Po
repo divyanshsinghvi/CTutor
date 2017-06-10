@@ -1,0 +1,4 @@
+m_syswrap/libcoregrind_x86_linux_a-syscall-amd64-solaris.o: \
+ m_syswrap/syscall-amd64-solaris.S /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
