@@ -1,0 +1,316 @@
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 18, "IP": "0x4004D6", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 18, "SP": "0xFFEFFFCB8",  "FP": "0x400520", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":"<UNINITIALIZED>"},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 18, "IP": "0x4004D7", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 18, "SP": "0xFFEFFFCB0",  "FP": "0x400520", "locals": {
+  "my_account": {"addr":"0xFFEFFFC88", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC88", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "balance":{"addr":"0xFFEFFFC90", "kind":"base", "type":"double", "size":8, "val":"<UNINITIALIZED>"},
+  "first_name":{"addr":"0xFFEFFFC98", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC78", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC78", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC78", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC7C", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]},
+{"func_name":"???", "line": -999, "SP": "0xFFEFFFCB8",  "FP": "0x400520", "locals": {
+},
+"ordered_varnames": []}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 20, "IP": "0x4004DA", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 20, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":"<UNINITIALIZED>"},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 21, "IP": "0x4004E1", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 21, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":"<UNINITIALIZED>"},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 21, "IP": "0x4004E9", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 21, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":"<UNINITIALIZED>"},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 22, "IP": "0x4004EE", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 22, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 23, "IP": "0x4004F6", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 23, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"<UNINITIALIZED>"}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 25, "IP": "0x4004FE", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 25, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"0x4005AF", "deref_val":
+{"addr":"0x4005AF", "kind":"heap_block", "val": [
+  {"addr":"0x4005AF", "kind":"base", "type":"char", "size":1, "val":"G"},
+  {"addr":"0x4005B0", "kind":"base", "type":"char", "size":1, "val":"u"},
+  {"addr":"0x4005B1", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x4005B2", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 26, "IP": "0x400505", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 26, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"0x4005AF", "deref_val":
+{"addr":"0x4005AF", "kind":"heap_block", "val": [
+  {"addr":"0x4005AF", "kind":"base", "type":"char", "size":1, "val":"G"},
+  {"addr":"0x4005B0", "kind":"base", "type":"char", "size":1, "val":"u"},
+  {"addr":"0x4005B1", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x4005B2", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":12345},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":"<UNINITIALIZED>"}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 27, "IP": "0x40050C", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 26, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"0x4005AF", "deref_val":
+{"addr":"0x4005AF", "kind":"heap_block", "val": [
+  {"addr":"0x4005AF", "kind":"base", "type":"char", "size":1, "val":"G"},
+  {"addr":"0x4005B0", "kind":"base", "type":"char", "size":1, "val":"u"},
+  {"addr":"0x4005B1", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x4005B2", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":12345},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":54321}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 28, "IP": "0x400511", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 28, "SP": "0xFFEFFFCB0",  "FP": "0xFFEFFFCB0", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"0x4005AF", "deref_val":
+{"addr":"0x4005AF", "kind":"heap_block", "val": [
+  {"addr":"0x4005AF", "kind":"base", "type":"char", "size":1, "val":"G"},
+  {"addr":"0x4005B0", "kind":"base", "type":"char", "size":1, "val":"u"},
+  {"addr":"0x4005B1", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x4005B2", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":12345},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":54321}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
+=== pg_trace_inst ===
+STDOUT: ""
+{
+"func_name": "main", "line": 28, "IP": "0x400512", "kind": 1, 
+"globals": {},
+"ordered_globals": [],
+"stack": [
+{"func_name":"main", "line": 28, "SP": "0xFFEFFFCB8",  "FP": "0x400520", "locals": {
+  "my_account": {"addr":"0xFFEFFFC90", "kind":"struct", "type":"Account", "val": {
+  "account_number":{"addr":"0xFFEFFFC90", "kind":"base", "type":"int", "size":4, "val":42},
+  "balance":{"addr":"0xFFEFFFC98", "kind":"base", "type":"double", "size":8, "val":3.141593},
+  "first_name":{"addr":"0xFFEFFFCA0", "kind":"pointer", "size":8, "val":"0x4005A8", "deref_val":
+{"addr":"0x4005A8", "kind":"heap_block", "val": [
+  {"addr":"0x4005A8", "kind":"base", "type":"char", "size":1, "val":"P"},
+  {"addr":"0x4005A9", "kind":"base", "type":"char", "size":1, "val":"h"},
+  {"addr":"0x4005AA", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AB", "kind":"base", "type":"char", "size":1, "val":"l"},
+  {"addr":"0x4005AC", "kind":"base", "type":"char", "size":1, "val":"i"},
+  {"addr":"0x4005AD", "kind":"base", "type":"char", "size":1, "val":"p"},
+  {"addr":"0x4005AE", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}},
+  "last_name":{"addr":"0xFFEFFFCA8", "kind":"pointer", "size":8, "val":"0x4005AF", "deref_val":
+{"addr":"0x4005AF", "kind":"heap_block", "val": [
+  {"addr":"0x4005AF", "kind":"base", "type":"char", "size":1, "val":"G"},
+  {"addr":"0x4005B0", "kind":"base", "type":"char", "size":1, "val":"u"},
+  {"addr":"0x4005B1", "kind":"base", "type":"char", "size":1, "val":"o"},
+  {"addr":"0x4005B2", "kind":"base", "type":"char", "size":1, "val":"\\0"}]}}}}
+,  "my_point": {"addr":"0xFFEFFFC80", "kind":"typedef", "type":"Point", "val":
+  {"addr":"0xFFEFFFC80", "kind":"struct", "type":"<anonymous>", "val": {
+  "xxx":{"addr":"0xFFEFFFC80", "kind":"base", "type":"int", "size":4, "val":12345},
+  "yyy":{"addr":"0xFFEFFFC84", "kind":"base", "type":"int", "size":4, "val":54321}}}}
+},
+"ordered_varnames": ["my_account","my_point"]}]
+}
