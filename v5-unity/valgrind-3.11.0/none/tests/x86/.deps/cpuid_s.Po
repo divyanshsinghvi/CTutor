@@ -1,0 +1,5 @@
+cpuid_s.o: cpuid_s.S /usr/include/stdc-predef.h ../../../tests/asm.h
+
+/usr/include/stdc-predef.h:
+
+../../../tests/asm.h:

@@ -1,0 +1,18 @@
+ansi-ansi.o: ansi.c /usr/include/stdc-predef.h ../../include/valgrind.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ ../../memcheck/memcheck.h ../../helgrind/helgrind.h \
+ ../../callgrind/callgrind.h ../../drd/drd.h
+
+/usr/include/stdc-predef.h:
+
+../../include/valgrind.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
+
+../../memcheck/memcheck.h:
+
+../../helgrind/helgrind.h:
+
+../../callgrind/callgrind.h:
+
+../../drd/drd.h:
