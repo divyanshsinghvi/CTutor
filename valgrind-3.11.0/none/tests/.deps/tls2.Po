@@ -1,0 +1,5 @@
+tls2.o: tls2.c /usr/include/stdc-predef.h ../../config.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:

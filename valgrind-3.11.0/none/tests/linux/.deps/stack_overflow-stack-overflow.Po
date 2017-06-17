@@ -1,0 +1,4 @@
+stack_overflow-stack-overflow.o: stack-overflow.c \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
