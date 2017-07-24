@@ -120,7 +120,7 @@ if gcc_retcode == 0:
     #print >> sys.stderr, postprocess_stderr
     #print >> sys.stderr, '==='
     
-    #print postprocess_stdout
+    print postprocess_stdout
 else:
     #print >> sys.stderr, '=== gcc stderr ==='
     #print >> sys.stderr, gcc_stderr
