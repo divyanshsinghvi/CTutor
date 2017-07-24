@@ -1,3 +1,0 @@
-self_invalidate.o: self_invalidate.c /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:

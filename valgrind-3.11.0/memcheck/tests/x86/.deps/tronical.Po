@@ -1,5 +1,0 @@
-tronical.o: tronical.S /usr/include/stdc-predef.h ../../../tests/asm.h
-
-/usr/include/stdc-predef.h:
-
-../../../tests/asm.h:
