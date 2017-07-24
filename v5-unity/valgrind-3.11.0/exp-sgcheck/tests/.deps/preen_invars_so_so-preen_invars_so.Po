@@ -1,4 +1,1 @@
-preen_invars_so_so-preen_invars_so.o: preen_invars_so.c \
- /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:
+# dummy

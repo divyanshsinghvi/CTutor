@@ -22109,7 +22109,7 @@ var AbstractBaseFrontend = (function () {
         if (jsonp_endpoint) {
             pytutor_1.assert(pyState !== '2' && pyState !== '3');
             // hack! should just be a dummy script for logging only
-            $.get(backendScript, { user_script: codeToExec,
+            $.get(backendScript, { user_script: codeToExec.cod,
                 options_json: JSON.stringify(backendOptionsObj),
                 user_uuid: this.userUUID,
                 session_uuid: this.sessionUUID,
@@ -22129,8 +22129,8 @@ var AbstractBaseFrontend = (function () {
         else {
             // for Python 2 or 3, directly execute backendScript
             pytutor_1.assert(pyState === '2' || pyState === '3' || pyState === 'c');
-            $.get(backendScript, { user_script: codeToExec,
-                raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
+            $.get(backendScript, { user_script: codeToExec.cod,
+                raw_input_json: codeToExec.firstTestLine,//this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
                 options_json: JSON.stringify(backendOptionsObj),
                 user_uuid: this.userUUID,
                 session_uuid: this.sessionUUID,
@@ -22671,7 +22671,10 @@ var OptFrontend = (function (_super) {
         if (this.deltaObj) {
             this.deltaObj.executeTime = new Date().getTime();
         }
-        this.executeCodeAndCreateViz(this.pyInputGetValue(), $('#pythonVersionSelector').val(), backendOptionsObj, frontendOptionsObj, 'pyOutputPane');
+	var dat = { cod : this.pyInputGetValue(),
+		firstTestLine : ""		 
+	};
+        this.executeCodeAndCreateViz(dat/*this.pyInputGetValue()*/, $('#pythonVersionSelector').val(), backendOptionsObj, frontendOptionsObj, 'pyOutputPane');
         this.initDeltaObj(); // clear deltaObj to start counting over again
     };
     OptFrontend.prototype.finishSuccessfulExecution = function () {
@@ -25622,7 +25625,7 @@ var OptTestcases = (function () {
         }
         else if (lang === 'c' || lang === 'cpp') {
             mod = 'c_cpp';
-            defaultVal = '// sorry, C/C++ tests not yet supported';
+            defaultVal = '';
         }
         else if (lang === 'js') {
             mod = 'javascript';
@@ -25648,7 +25651,8 @@ var OptTestcases = (function () {
             var cod = dat.cod;
             if (isViz) {
                 $('#vizTestCase_' + id).html("Visualizing ...");
-                _me.parent.vizTestCase(id, cod, dat.firstTestLine);
+		console.log(dat)
+                _me.parent.vizTestCase(id, dat, dat.firstTestLine);
             }
             else {
                 $('#runTestCase_' + id).html("Running ...");
@@ -25681,8 +25685,9 @@ var OptTestcases = (function () {
         }
         var bufferCodNumLines = bufferCod.split('\n').length;
         var combinedCod = userCod + bufferCod + testCod;
-        return { cod: combinedCod,
-            firstTestLine: userCodNumLines + bufferCodNumLines - 1 };
+        return { cod: userCod,//combinedCod,
+	    firstTestLine: testCod};
+            //firstTestLine: userCodNumLines + bufferCodNumLines - 1 };
     };
     OptTestcases.prototype.appStateAugmenter = function (appState) {
         // returns a list of strings, each of which is a test case

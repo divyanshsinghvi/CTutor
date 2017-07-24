@@ -1,79 +1,25 @@
 // Example C code for OPT
-// From the test suite of https://github.com/codespecs/daikon
-//   daikon/tests/kvasir-tests/
-
-// Kvasir unit test for nested structs
-
-// TODO: This is another test case that fails on AMD64 due to the
-// DynComp single tag per register issue.  If (when) we fix this,
-// change all the 'long's below back to 'int'. (markro)
-
-#include <stdio.h>
 #include <stdlib.h>
 
-struct foo {
-  long age;
-  struct bar {
-    long a;
-    long b;
-  } b;
-  char* name;
-};
-
-struct betterFoo {
-
-  long betterAge;
-
-  struct betterBar {
-    long betterA;
-    struct foo crappyFoo;
-
-    struct bazzz {
-      char hello[100];
-      char world[1000];
-    } myBazzz;
-
-    long betterB;
-  } namedBar;
-
-  char* betterName;
-};
-
-struct foo globalFoo[4];
-struct betterFoo globalBetterFoo;
-
-struct foo* returnF(struct foo* f, long* blah)
-{
-  return f;
+int arrayParams(short short_array[5] /* incorrect bound */, char char_array[]) {
+  printf(char_array);
+  return 0;
 }
 
 int main() {
-  struct foo fooArray[20];
-  long intArray1[100];
-  long* onHeap = (long*)calloc(69, sizeof(*onHeap));
+  short stack_shorts[10];
+  stack_shorts[1] = 1;
+  stack_shorts[3] = 3;
+  stack_shorts[5] = 5;
+  stack_shorts[7] = 7;
+  stack_shorts[9] = 9;
 
-  globalFoo[0].age = 13;
-  globalFoo[1].age = 23;
-  globalFoo[2].age = 33;
-  globalFoo[3].age = 43;
+  char* heap_str = (char*)malloc(7);
+  heap_str[0] = 'B';
+  heap_str[1] = 'o';
+  heap_str[2] = 'b';
+  heap_str[3] = '\0';
 
-  globalFoo[0].b.a = 0;
-  globalFoo[1].b.a = 1;
-  globalFoo[2].b.a = 2;
-  globalFoo[3].b.a = 3;
-
-  globalFoo[0].b.b = 0;
-  globalFoo[1].b.b = 100;
-  globalFoo[2].b.b = 200;
-  globalFoo[3].b.b = 300;
-
-  globalFoo[0].name = "globalFoo[0]";
-  globalFoo[1].name = "globalFoo[1]";
-  globalFoo[2].name = "globalFoo[2]";
-  globalFoo[3].name = "globalFoo[3]";
-
-  returnF(fooArray, intArray1);
-  printf("&globalFoo: %p, &globalBetterFoo: %p, &fooArray: %p\n", &globalFoo, &globalBetterFoo, fooArray);
-  returnF(globalFoo, onHeap);
+  arrayParams(stack_shorts, heap_str);
   return 0;
 }

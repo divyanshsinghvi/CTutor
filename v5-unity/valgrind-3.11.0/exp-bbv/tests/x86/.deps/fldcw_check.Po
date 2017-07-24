@@ -1,1 +1,1 @@
-fldcw_check.o: fldcw_check.S
+# dummy

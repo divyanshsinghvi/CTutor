@@ -1,3 +1,1 @@
-bug152022.o: bug152022.c /usr/include/stdc-predef.h
-
-/usr/include/stdc-predef.h:
+# dummy

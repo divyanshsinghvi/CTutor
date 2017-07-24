@@ -1,6 +1,1 @@
-pushfpopf_s.o: pushfpopf_s.S /usr/include/stdc-predef.h \
- ../../../tests/asm.h
-
-/usr/include/stdc-predef.h:
-
-../../../tests/asm.h:
+# dummy
